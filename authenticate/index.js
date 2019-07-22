@@ -33,20 +33,12 @@ const checkJwt = jwt({
   algorithms: ["RS256"]
 });
 
-// placeholder for private endpoint user will be allowed to navigate to once authenticated
-app.get("/api/:authenticate/:private", checkJwt, function(req, res) {
+app.get("/api/:authenticate/:private", checkJwt, (req, res) => {
   res.json({
     message:
-      "Hello from a private endpoint! You need to be authenticated to see this."
+      "Hello from a private endpoint! If you see this you're authenticated..."
   });
 });
-
-// app.get("/private", checkJwt, function(req, res) {
-//   res.json({
-//     message:
-//       "Hello from a private endpoint! You need to be authenticated to see this."
-//   });
-// });
 
 app.use(function(err, req, res, next) {
   console.error(err.stack);
