@@ -7,7 +7,7 @@
 
 I'm using express for azure functions since express is required to use auth0's node-js wrapper for creating a back-end authentication service
 
-Next I'm going to create a test client that will be used for development. Right now there's really no way for you to generate a token to test this service unless you want to create a test client yourself.
+Run this alongside https://github.com/CruzHacks/cruzhacks-2020-test-client to see how they work together. Try logging in with the test user and navigate to the profile and private tabs.
 
 The following link might help clarify what this service should accomplish, and it's where I got started with this iteration of the authentication service.
 
