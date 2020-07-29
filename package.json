@@ -11,7 +11,7 @@
     "serverless"
   ],
   "dependencies": {
-    "auth0": "^2.18.0",
+    "auth0": "^2.27.1",
     "azure-function-express": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
